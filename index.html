@@ -50,6 +50,43 @@
 			text-align: center;
 			color: #888;
 		}
+
+		.friend-link {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			background: #1e1e1e;
+			border: 1px solid #333;
+			border-radius: 8px;
+			padding: 0.8rem 1rem;
+			max-width: 520px;
+			text-decoration: none;
+		}
+
+		.friend-link:hover {
+			border-color: #bb86fc;
+			text-decoration: none;
+		}
+
+		.friend-link .avatar {
+			width: 56px;
+			height: 56px;
+			border-radius: 50%;
+			flex-shrink: 0;
+			object-fit: cover;
+		}
+
+		.friend-link .name {
+			display: block;
+			font-weight: 600;
+			color: #03dac6;
+		}
+
+		.friend-link .bio {
+			display: block;
+			font-size: 0.9em;
+			color: #aaa;
+		}
 	</style>
 </head>
 
@@ -132,7 +169,15 @@
 
 		<h2>💡 当前状态</h2>
 		<p>大5学生 I7-12650H+RTX4060 LAPTOP Windows 11</p>
-		<p>需要：钱以缓解资金紧张 · 一份可以发挥特长的工作 🙏</p>
+
+		<h2>🔗 友链</h2>
+		<a class="friend-link" href="https://gh.sbchild.top/" target="_blank" rel="noopener">
+			<img class="avatar" src="https://gh.sbchild.top/avatar.jpg" alt="色妹妹的裙底">
+			<span>
+				<span class="name">色妹妹的裙底</span>
+				<span class="bio">底裤被掀了，现在只剩一条随风飘荡的长裙。</span>
+			</span>
+		</a>
 
 		<footer>
 			Made with ❤️ and Rust | © 2026 kouhe3
